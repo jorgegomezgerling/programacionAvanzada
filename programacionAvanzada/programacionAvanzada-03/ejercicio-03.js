@@ -15,7 +15,11 @@ usuario = {
 }
 
 function autenticarUsuario(creden, usuario){
-    return creden.keys() == usuario.keys();
+    if (creden.usuario == usuario.usuario && creden.contrasenia == usuario.contrasenia){
+        return true
+    }
+    return false;
 }
 
-autenticarUsuario(credenciales, usuario);
+resultado = autenticarUsuario(credenciales, usuario);
+console.log(resultado);

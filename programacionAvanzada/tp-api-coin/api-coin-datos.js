@@ -1,7 +1,7 @@
-//const apiKEY = '3B50E020-0903-4C37-82C1-724D0C36B712';
+//const apiKEY = ''; Borro apikey porque me lo solicitó gitHub
 
 async function obtenerDatos(){
-    const url = 'https://rest.coinapi.io/v1/exchanges/APIKEY-3B50E020-0903-4C37-82C1-724D0C36B712';
+    const url = 'https://rest.coinapi.io/v1/exchanges/APIKEY-...';
    
     try {
         const response = await fetch(url);
